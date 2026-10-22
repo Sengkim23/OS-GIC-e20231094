@@ -1,0 +1,13 @@
+/home/gic-ly-sengkim/oslab-work/lab1/task2_files
+market.txt
+panda.txt
+This is file panda
+This is file market
+market.txt
+panda.txt
+panda_copy.txt
+market_renamed.txt
+panda.txt
+panda_copy.txt
+market_renamed.txt
+panda.txt
