@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 # OS Lab 1 Submission
+=======
+git add README.md
+git commit -m "lab1: update README"
+git push# Lab 1
+>>>>>>> 9b53ca5c14745a8c1770f6909cd6e3c21361a2ec
 
 * Student Name: LY Sengkim
 * Student ID: e20231094
 * Ubuntu username on the server: gic-ly-sengkim
 * My values (`oslab values lab1`): file1 = panda, file2 = market, count = 3
 
+<<<<<<< HEAD
 ## Task 1: Operating System Identification
 I ran `uname -r` and `lsb_release -a`. The kernel version is [paste from `uname -r`]. The distribution version is [paste from `lsb_release -a`]. The kernel is the core that manages hardware and processes, while the distribution is the complete system built around it, so they are different numbers.
 
@@ -39,3 +46,16 @@ Based on [commands you ran, e.g. `systemd-detect-virt`, `lscpu`], my system is r
 
 ## AI Note (optional)
 An AI tool suggested the README structure and reminded me to fill in observations from my own terminal. I checked by running each command myself and pasting my real output. [Edit or delete to match what you actually did.]
+=======
+## Tasks completed
+- Task 1: OS information (task1_os_info.txt)
+- Task 2: File commands (task2_file_commands.txt, task2_files)
+- Task 3: apt install mc (task3_apt.txt), done on my own Ubuntu because the server account has no sudo
+- Task 4: Process list (task4_process_list.txt)
+- Task 5: Multitasking (task5_multitasking.txt)
+- Task 6: Virtualization check (task6_virtualization_check.txt)
+git add README.md
+git commit -m "lab1: update README"
+git push# Lab 1
+
+>>>>>>> 9b53ca5c14745a8c1770f6909cd6e3c21361a2ec
