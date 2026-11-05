@@ -1,0 +1,63 @@
+$ cat /proc/self/status | head -20
+Name:	head
+Umask:	0002
+State:	R (running)
+Tgid:	1535352
+Ngid:	0
+Pid:	1535352
+PPid:	1533051
+TracerPid:	0
+Uid:	1031	1031	1031	1031
+Gid:	1031	1031	1031	1031
+FDSize:	256
+Groups:	1031 
+NStgid:	1535352
+NSpid:	1535352
+NSpgid:	1535352
+NSsid:	1533051
+Kthread:	0
+VmPeak:	   16304 kB
+VmSize:	   16304 kB
+VmLck:	       0 kB
+
+$ cat /proc/self/maps | head -20
+5a41d8152000-5a41d8244000 r--p 00000000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/head
+5a41d8244000-5a41d86fc000 r-xp 000f2000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/head
+5a41d86fc000-5a41d8abb000 r--p 005aa000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/head
+5a41d8abb000-5a41d8c20000 r--p 00968000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/head
+5a41d8c20000-5a41d8c26000 rw-p 00acd000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/head
+5a41d8c26000-5a41d8c27000 rw-p 00000000 00:00 0 
+5a41f92d5000-5a41f9326000 rw-p 00000000 00:00 0                          [heap]
+75824fb54000-75824fb57000 r--p 00000000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+75824fb57000-75824fbd3000 r-xp 00003000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+75824fbd3000-75824fbfe000 r--p 0007f000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+75824fbfe000-75824fbff000 r--p 000a9000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+75824fbff000-75824fc00000 rw-p 000aa000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+75824fc00000-75824fc28000 r--p 00000000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+75824fc28000-75824fdc0000 r-xp 00028000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+75824fdc0000-75824fe0e000 r--p 001c0000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+75824fe0e000-75824fe12000 r--p 0020e000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+75824fe12000-75824fe14000 rw-p 00212000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+75824fe14000-75824fe21000 rw-p 00000000 00:00 0 
+75824fe45000-75824fe4a000 rw-p 00000000 00:00 0 
+75824fe4a000-75824fe5c000 r--p 00000000 fc:00 9045155                    /usr/lib/x86_64-linux-gnu/libm.so.6
+
+$ cat /proc/self/cmdline | tr '\0' ' '
+cat /proc/self/cmdline 
+
+$ ps aux | head -15
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2  25892 17184 ?        Ss   Oct07   2:17 /usr/lib/systemd/systemd --system --deserialize=107
+root           2  0.0  0.0      0     0 ?        S    Oct07   0:02 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Oct07   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/0:0H-kblockd]
+root          13  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    Oct07   0:01 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    Oct07   1:52 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    Oct07   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    Oct07   0:00 [rcu_exp_gp_kthread_worker]
