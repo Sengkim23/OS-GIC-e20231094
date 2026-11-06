@@ -1,0 +1,7 @@
+# Task 2 - Directory Listing
+gcc -Wall -o dir_list_lib dir_list_lib.c
+./dir_list_lib
+gcc -Wall -o dir_list_sys dir_list_sys.c
+./dir_list_sys
+# readdir() order is not guaranteed, so compare sorted:
+./dir_list_lib | sort > a.out; ./dir_list_sys | sort > b.out; diff a.out b.out && echo identical

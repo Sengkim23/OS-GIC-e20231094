@@ -5,3 +5,6 @@ strace -e trace=openat,read,write,close ./file_reader_lib  2> ../task3_strace/st
 strace -e trace=openat,read,write,close ./file_reader_sys  2> ../task3_strace/strace_sys_reader.txt
 strace -c ./file_creator_lib 2> ../task3_strace/strace_summary_lib.txt
 strace -c ./file_creator_sys 2> ../task3_strace/strace_summary_sys.txt
+# full (unfiltered) trace, useful for spotting brk/mmap/fstat/ioctl
+strace ./file_creator_lib
+strace ./file_creator_sys

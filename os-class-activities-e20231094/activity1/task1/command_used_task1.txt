@@ -1,0 +1,17 @@
+# Task 1 - File Creator & Reader
+gcc -Wall -o file_creator_lib file_creator_lib.c
+./file_creator_lib
+cat output.txt
+gcc -Wall -o file_creator_sys file_creator_sys.c
+./file_creator_sys
+cat output.txt
+gcc -Wall -o file_reader_lib file_reader_lib.c
+./file_reader_lib
+gcc -Wall -o file_reader_sys file_reader_sys.c
+./file_reader_sys
+# verify both versions are identical
+./file_creator_lib > a.out; ./file_creator_sys > b.out; diff a.out b.out && echo identical
+./file_reader_lib  > c.out; ./file_reader_sys  > d.out; diff c.out d.out && echo identical
+# optional bonus (Windows, MinGW)
+gcc -o file_creator_win file_creator_win.c
+./file_creator_win
