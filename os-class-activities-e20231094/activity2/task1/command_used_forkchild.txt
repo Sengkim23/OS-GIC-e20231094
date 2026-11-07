@@ -1,0 +1,20 @@
+  351  autorok
+  352  ssh gic-ly-sengkim@localhost -p 2222
+  353  autorok
+  354  ssh gic-ly-sengkim@localhost -p 2222
+  355  autorok
+  356  ssh gic-ly-sengkim@localhost -p 2222
+  357  autorok
+  358  ssh gic-ly-sengkim@localhost -p 222
+  359  ssh gic-ly-sengkim@localhost -p 2222
+  360  autorok
+  361  ssh gic-ly-sengkim@localhost -p 2222
+  362  ps -ef --forest | grep forkchild
+  363  ./forkchild > result_forkchild.txt 2>&1
+  364  rm result_forkchild.txt
+  365  cd os-class-activities-e20231094/activity2/task1
+  366  pwd
+  367  ./forkchild > result_forkchild.txt 2>&1 &
+  368  ps -ef --forest | grep forkchild
+  369  cat result_forkchild.txt
+  370  history | tail -n 20 > command_used_forkchild.txt

@@ -1,0 +1,20 @@
+  397  gcc -o forkchild forkchild.c
+  398  ./forkchild > result_forkchild.txt 2>&1
+  399  ps -ef --forest | grep forkchild
+  400  cat result_forkchild.txt
+  401  history | tail -n 20 > command_used_forkchild.txt
+  402  cd ../task3_shm
+  403  sed -i 's/OS-yourname/OS-e20231094/' shm-producer.c shm-consumer.c
+  404  grep OS- shm-producer.c shm-consumer.c
+  405  gcc -o shm-producer shm-producer.c -lrt
+  406  gcc -o shm-consumer shm-consumer.c -lrt
+  407  ./shm-producer
+  408  ./shm-consumer > result-shm-ipc.txt
+  409  cat result-shm-ipc.txt
+  410  history | tail -n 20 > command_used_shm.txt
+  411  ./shm-consumer
+  412  cat result-shm-ipc.txt
+  413  ./shm-producer
+  414  ./shm-consumer > result-shm-ipc.txt
+  415  cat result-shm-ipc.txt
+  416  history | tail -n 20 > command_used_shm.txt
