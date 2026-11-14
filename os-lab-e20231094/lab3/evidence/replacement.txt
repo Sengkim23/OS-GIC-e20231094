@@ -1,0 +1,9 @@
+
+=== NEW FILE USING THE OLD NAME ===
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle-final.txt
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle-hard.txt
+19142418 lrwxrwxrwx 1 gic-ly-sengkim gic-ly-sengkim 10 Nov 12 08:33 candle-soft.txt -> candle.txt
+19142440 -rw-rw-r-- 1 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 08:39 candle.txt
+candle.txt: version 214
+hard: version 175
+soft: version 214

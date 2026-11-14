@@ -1,0 +1,6 @@
+<notes/candle12.txt>
+<notes/candle1.txt>
+<notes/candle2.txt>
+<notes/candle1.txt>
+<notes/candle2.txt>
+<notes/*.txt>

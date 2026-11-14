@@ -1,0 +1,24 @@
+
+=== BEFORE RENAME ===
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle-hard.txt
+19142418 lrwxrwxrwx 1 gic-ly-sengkim gic-ly-sengkim 10 Nov 12 08:33 candle-soft.txt -> candle.txt
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle.txt
+hard: version 175
+soft: version 175
+stored target: candle.txt
+
+=== AFTER RENAME, BEFORE REPAIR ===
+ls: cannot access 'candle-final.txt': No such file or directory
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle-hard.txt
+19142418 lrwxrwxrwx 1 gic-ly-sengkim gic-ly-sengkim 10 Nov 12 08:33 candle-soft.txt -> candle.txt
+hard: version 175
+stored target: candle.txt
+soft: cat: candle-soft.txt: No such file or directory
+
+=== AFTER REPAIR ===
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle-final.txt
+19142084 -rw-rw-r-- 2 gic-ly-sengkim gic-ly-sengkim 12 Nov 12 07:44 candle-hard.txt
+19142418 lrwxrwxrwx 1 gic-ly-sengkim gic-ly-sengkim 16 Nov 12 08:42 candle-soft.txt -> candle-final.txt
+stored target: candle-final.txt
+hard: version 175
+soft: version 175
