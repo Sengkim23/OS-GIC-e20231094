@@ -1,0 +1,20 @@
+  521  history | tail -n 20 > command_used_socket.txt
+  522  cat result_socket.txt
+  523  $ cd ../task2_threads
+  524  cd ..
+  525  cd task2_treads
+  526  cd task2_threads
+  527  $ gcc -o threads threads.c -pthread
+  528  cd /mnt/c/Users/cdc22/OS-GIC-e20231094/os-class-activities-e20231094/activity3/task2_threads
+  529  gcc -Wall -Wextra -pthread threads.c -o threads
+  530  ./threads
+  531  $ ./threads > result_threads.txt 2>&1
+  532  $ cat result_threads.txt
+  533  shared_counter++;
+  534  ./threads > result_threads.txt 2>&1
+  535  cat result_threads.txt
+  536  ls -l result_threads.txt
+  537  gcc -Wall -Wextra -pthread threads_mutex.c -o threads_mutex
+  538  ./threads_mutex > result_threads_mutex.txt 2>&1
+  539  cat result_threads_mutex.txt
+  540  history | tail -n 20 > command_used_threads.txt

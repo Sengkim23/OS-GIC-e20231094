@@ -1,0 +1,30 @@
+  538  ./threads_mutex > result_threads_mutex.txt 2>&1
+  539  cat result_threads_mutex.txt
+  540  history | tail -n 20 > command_used_threads.txt
+  541  cat command_used_threads.txt
+  542  ls
+  543  cd ..
+  544  cd task3_java
+  545  cd /mnt/c/Users/cdc22/OS-GIC-e20231094/os-class-activities-e20231094/activity3/task3_java
+  546  javac ThreadDemo.java
+  547  java ThreadDemo > result_thread_demo.txt 2>&1
+  548  cat result_thread_demo.txt
+  549  sudo apt update
+  550  sudo apt install openjdk-21-jdk -y
+  551  java -version
+  552  javac -version
+  553  cd /mnt/c/Users/cdc22/OS-GIC-e20231094/os-class-activities-e20231094/activity3/task3_java
+  554  javac ThreadDemo.java
+  555  java ThreadDemo > result_thread_demo.txt 2>&1
+  556  cat result_thread_demo.txt
+  557  javac ThreadDemo.java
+  558  java ThreadDemo > result_thread_demo.txt 2>&1
+  559  cat result_thread_demo.txt
+  560  javac RunnableDemo.java
+  561  java RunnableDemo > result_runnable_demo.txt 2>&1
+  562  cat result_runnable_demo.txt
+  563  javac PoolDemo.java
+  564  java PoolDemo > result_pool_demo.txt 2>&1
+  565  cat result_pool_demo.txt
+  566  $ history | tail -n 30 > command_used_java.txt
+  567  history | tail -n 30 > command_used_java.txt

@@ -1,0 +1,57 @@
+=== THREAD INFORMATION ===
+    PID     LWP NLWP PSR STAT COMMAND
+   9670    9670    5   4 Sl   threads_observe
+   9670    9671    5   0 Sl   threads_observe
+   9670    9672    5   6 Sl   threads_observe
+   9670    9673    5   2 Sl   threads_observe
+   9670    9674    5   2 Sl   threads_observe
+=== PROC TASK DIRECTORIES ===
+9670
+9671
+9672
+9673
+9674
+=== TOTAL THREAD COUNT ===
+5
+    PID     LWP NLWP PSR STAT COMMAND
+    PID    PPID PSR COMMAND
+      3       2   6 init-watcher
+      7       2   0 init
+    327       2   6 SessionLeader
+    340       2   0 login
+    977       2   4 SessionLeader
+  10719       2   6 SessionLeader
+    PID    PPID PSR COMMAND
+      3       2   6 init-watcher
+      7       2   0 init
+    327       2   6 SessionLeader
+    340       2   0 login
+    977       2   4 SessionLeader
+  10719       2   6 SessionLeader
+    PID     LWP NLWP PSR STAT COMMAND
+  11309   11309    5   6 Sl   threads_observe
+  11309   11311    5   5 Sl   threads_observe
+  11309   11312    5   3 Sl   threads_observe
+  11309   11313    5   7 Sl   threads_observe
+  11309   11314    5   2 Sl   threads_observe
+    PID    PPID PSR COMMAND
+      3       2   6 init-watcher
+      7       2   0 init
+    327       2   6 SessionLeader
+    340       2   0 login
+    977       2   4 SessionLeader
+  10719       2   6 SessionLeader
+=== PID 2 INFORMATION ===
+    PID    PPID PSR COMMAND
+      2       1   0 init-systemd(Ub
+
+=== CHILD PROCESSES OF PID 2 ===
+    PID    PPID PSR COMMAND
+      3       2   6 init-watcher
+      7       2   0 init
+    327       2   6 SessionLeader
+    340       2   0 login
+    977       2   4 SessionLeader
+  10719       2   6 SessionLeader
+
+Note: WSL displays its init processes here instead of the usual Linux kernel threads.
