@@ -1,0 +1,6 @@
+Client: socket created
+Client: connecting to server on port 8080...
+Client: connected!
+Client: sent message: "Hello from client!"
+Client: received from server: "Hello from server!"
+Client: connection closed.

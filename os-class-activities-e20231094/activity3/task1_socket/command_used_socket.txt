@@ -1,0 +1,20 @@
+  502  autorok
+  503  ssh gic-ly-sengkim@localhost -p 2222
+  504  cd /mnt/c/Users/cdc22/OS-GIC-e20231094/os-class-activities-e20231094/activity3/task1_socket
+  505  gcc -Wall -Wextra client.c -o client
+  506  ./client
+  507  $ ./server > result_server.txt 2>&1 &
+  508  $ sleep 1
+  509  $ ./client > result_client.txt 2>&1
+  510  $ wait
+  511  $ cat result_server.txt result_client.txt > result_socket.txt
+  512  $ history | tail -n 20 > command_used_socket.txt
+  513  gcc -Wall -Wextra server.c -o server
+  514  gcc -Wall -Wextra client.c -o client
+  515  ./server > result_server.txt 2>&1 &
+  516  sleep 1
+  517  ./client > result_client.txt 2>&1
+  518  wait
+  519  cat result_server.txt result_client.txt > result_socket.txt
+  520  cat result_socket.txt
+  521  history | tail -n 20 > command_used_socket.txt
