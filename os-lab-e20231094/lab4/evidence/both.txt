@@ -1,0 +1,8 @@
+status,count
+paid,7
+clear,10
+paid,2
+clear,7
+paid,4
+paid-late,70
+cat: data/not-present.csv: No such file or directory

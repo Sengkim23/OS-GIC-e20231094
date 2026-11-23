@@ -1,0 +1,10 @@
+grep '^paid,' data/events.csv | tee evidence/selected.txt
+grep '^paid,' data/events.csv | cut -d, -f2 | tee evidence/fields.txt
+grep '^paid,' data/events.csv | wc -l > evidence/normal.txt
+printf 'status,count\nclear,2\n' > data/no-match.csv
+cp -- data/events.csv data/changed.csv
+printf 'paid,7\npaid-late,99\n' >> data/changed.csv
+grep '^paid,' data/no-match.csv | wc -l > evidence/edge.txt
+grep '^paid,' data/changed.csv | wc -l >> evidence/edge.txt
+cat data/missing.csv > evidence/stdout.txt 2> evidence/stderr.txt
+echo $? > evidence/status.txt
